@@ -1,0 +1,36 @@
+﻿GEHURYS ADRIAN MORALES ROSARIO   
+08/03/2024
+
+
+
+
+
+
+Il programma progettato è stato implementato utilizzando il linguaggio di programmazione C. Si tratta di un'applicazione dotata di un'assistente che agevola l'esecuzione dei compiti matematici da svolgere.
+
+
+Nella sintassi e nella logica troviamo diversi errori che non permettono al programma di essere eseguito correttamente.
+
+
+
+
+Il primo problema si trova qui: char scelta = {'\0'}; poiché  “scelta” è solo un singolo carattere non dovrebbe trovarsi tra le parentesi graffe. La soluzione sarebbe eliminare le parentesi graffe.
+
+
+
+
+Il secondo errore per poter far funzionare il programma è il seguente: scanf ("%d", &scelta); dato che stiamo eseguendo un “char” la lettera “d” tra le parentesi tonde non è quella corretta da inserire. La soluzione potrebbe essere sostituire la lettera “d” con la lettera “c”. 
+
+
+Altro errore che impedisce la corretta esecuzione del programma è che sulla voce: short int  a,b = 0;
+        printf ("Inserisci i due numeri da moltiplicare:");
+        scanf ("%f", &a);
+        scanf ("%d", &b);
+dopo la percentuale i caratteri dovrebbero essere uguali e non diversi la soluzione potrebbe essere l'inserimento corretto delle lettere in questo caso: scanf ("%d", &a);
+        scanf ("%d", &b);
+
+
+Nella seguente riga: int divisione = a % b;  troviamo un problema fondamentale ed è che la divisione nella programmazione (ed in qualsiasi altro ambito) non va raffigurata con il seguente simbolo “%” per soluzionare il problema basterebbe sostituire la “%” con “/”. 
+
+
+Ultimo, ma non meno importante errore è il seguente: short int prodotto = a * b;  la parola “short” limita i risultati (numericamente) la soluzione in questo caso è l’eliminazione della parola “short” per permettere una completa erogazione dei risultati.
